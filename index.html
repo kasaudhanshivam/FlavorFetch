@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="rec2.jpg">
+  <title>FlavorFetch — Smart Recipe Finder</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>🍲 FlavorFetch — Smart Recipe Finder</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#recipes">Recipes</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Video Background -->
+  <section class="hero" id="home">
+    <div class="hero-video-wrapper">
+      <!-- Video Element -->
+      <video autoplay muted loop id="hero-video">
+        <source src="https://videos.pexels.com/video-files/2431225/2431225-uhd_2560_1440_24fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="hero-content">
+      <h2>Find Your Favorite Recipe</h2>
+      <p>Search thousands of recipes from around the world!</p>
+      <form id="search-form">
+        <input type="text" id="search" placeholder="Search for a recipe..." required>
+        <button id="searchBtn" type="submit">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Recipe Results Section -->
+  <section class="recipes" id="recipes">
+    <!-- <h2>Recipe Results</h2> -->
+    <h2 id="result">Top Picks for you...</h2>
+    <div id="recipe-results" class="recipe-results">
+      <div class="recipe-card">
+        <img src="https://img.spoonacular.com/recipes/654532-556x370.jpg" alt="Paneer jalfrezi">
+        <h3>Paneer jalfrezi</h3>
+        <p><b>Ready in:</b> 45 minutes</p>
+        
+        <button class="toggle-ingredients-btn" fdprocessedid="wcok4b">Show Ingredients</button>
+        <div class="ingredients hidden">
+          <p><b>Ingredients:</b></p>
+          <ul><li>200 g paneer (Indian cottage cheese) cut into 3cm x 1cm pieces</li><li>2 tbsp oil</li><li>1 tsp cumin seeds</li><li>1 tomato cut into strips</li><li>2 tomatoes (for purée)</li><li>1 large onion - 1/2 cut into strips and 1/2 for puree</li><li>1 pepper cut into strips (I used half a green and half a red pepper for some colour)</li><li>1/4 tsp turmeric powder</li><li>1/4 tsp chilli powder</li><li>2 green chillies chopped</li><li>2 - 3 dried red (kashmiri) chillies</li><li>1 inch ginger cut into thin strips</li><li>1/2 tsp garam masala</li><li>1/2 tsp sugar</li><li>1 &amp; 1/2 tsp vinegar</li><li>A couple of sprigs of coriander for garnish</li><li>salt to taste</li></ul>
+        </div>
+        
+        <button class="toggle-instructions-btn" fdprocessedid="qir8q">Show Instructions</button>
+        <div class="instructions hidden">
+          <p><b>Instructions:</b></p>
+          <ul><li>Roughly chop half an onion and 2 tomatoes. Heat 1 tbsp oil in a non stick pan. Add the onions and fry until lightly brown. Add the tomatoes and cook for 2-3 minutes until soft. Remove, let cool and blend to a pure in blender.</li><li>In the same pan heat 1 tbsp oil on medium heat. Add the cumin seeds and let them sputter. Add the kashmiri red chillies and the finely sliced ginger and fry for 30-45 seconds.</li><li>Add the turmeric powder followed by the onions, peppers, chilli powder, salt and two-thirds of the chopped green chillies and fry for 3-4 minutes.</li><li>Add the paneer and cook on a low heat for 5 minutes. Add the tomato pure, garam masala and sugar and simmer for 2 minutes.</li><li>Then add the tomatoes (cut into strips) and toss. Stir in the vinegar and garnish with green chillies and coriander.</li></ul>
+        </div>
+      </div>
+
+
+      <div class="recipe-card">
+        <img src="https://img.spoonacular.com/recipes/632080-556x370.jpg" alt="All Time Favorite- Gulab Jamun">
+        <h3>All Time Favorite- Gulab Jamun</h3>
+        <p><b>Ready in:</b> 45 minutes</p>
+        
+        <button class="toggle-ingredients-btn" fdprocessedid="ez31ph">Show Ingredients</button>
+        <div class="ingredients hidden">
+          <p><b>Ingredients:</b></p>
+          <ul><li>1 cup Instant dry milk (milk powder) –</li><li>4 tablespoons All purpose flour –</li><li>4 tablespoons Yogurt – (or enough to knead the dough)</li><li>2 tablespoons Clarified butter –</li><li>1/2 teaspoon Baking soda –</li><li>4 cups Water –</li><li>3 cups Sugar –</li><li>Rose essence – few drops, optional. You can use Saffron Essence too</li><li>1/2 teaspoon Cardamom powder – or to taste</li><li>Saffron – few strands, optional</li><li>1/4 teaspoon Salt-</li><li>Oil – for deep frying</li></ul>
+        </div>
+        
+        <button class="toggle-instructions-btn" fdprocessedid="173hp">Show Instructions</button>
+        <div class="instructions hidden">
+          <p><b>Instructions:</b></p>
+          <ul><li>Make the syrup in a pan by adding water, sugar, rose syrup, cardamom powder and saffron.</li><li>Put the pot on the flame and bring to boil. Once it starts boiling, reduce the heat and allow it to simmer.</li><li>Meanwhile, get the oil for deep-frying ready. Heat up the oil on low to medium heat. ( Temperature of oil is the key to make good Gulab Jamuns. Temperature has to be between low to medium)</li><li>For the dumplings, in a mixing bowl,add in all dry ingredients i.e instant dry milk, salt, all purpose flour and baking soda.</li><li>Mix well and add in the clarified butter and after that slowly start mixing in the yogurt. Make into a dough. (Yogurt is the binding factor here so don't need to add any water to make the dough)</li><li>Allow the dough to rest for 10-15 minutes by covering it with a damp cloth or kitchen towel. Make desired size balls, make sure they are smooth and do not have any creases. (You can use a little oil on your hands and make the ball and flatten it out and then roll it again to a ballthis will help smoothening out the cracks)</li><li>Test the oil by dropping a small piece of dough, if it sits at the bottom of the pan for a few seconds before coming to the surface, the oil is ready.</li><li>Carefully drop 3-4 dumplings in the oil and keep rotating them for an even color.</li><li>Once the dumplings are a dark golden brown, take them out into a paper towel.</li><li>Bring the syrup to another quick boil and drop in the dumplings.</li><li>Turn off the flame and cover the pan and let them soak in the syrup for at least 1 hour. The more you let them sit in the syrup, the better. ( They soak up the delicious syrup, fluff up and becomes very soft)</li><li>Serve these HOT !</li></ul>
+        </div>
+    </div>
+
+
+      <div class="recipe-card">
+        <img src="https://img.spoonacular.com/recipes/652542-556x370.jpg" alt="Mughlai Malai Kofta Curry">
+        <h3>Mughlai Malai Kofta Curry</h3>
+        <p><b>Ready in:</b> 45 minutes</p>
+        
+        <button class="toggle-ingredients-btn" fdprocessedid="t4h1z">Show Ingredients</button>
+        <div class="ingredients hidden">
+          <p><b>Ingredients:</b></p>
+          <ul><li>1/2 teaspoon Red chilli powder</li><li>2 Thai Green chillies, finely chopped</li><li>1 teaspoon Coriander powder</li><li>1/4 cup Cornflour/ corn starch</li><li>1/4 cup Fresh Cilantro, finely chopped</li><li>1 teaspoon Garam Masala</li><li>1 Tbsp, Garlic Paste</li><li>1 Tbsp, Ginger paste</li><li>1/4 cup Golden Raisins + Chopped Cashew</li><li>2 Green Chillies, finely chopped</li><li>1/2 cup Fresh Cream / Half &amp; Half</li><li>1 teaspoon .Cmin powder</li><li>2 % Milk, as needed</li><li>3 mediums Onions,</li><li>1/4 cup Paneer, grated (cottage cheese)</li><li>1/2 cup Paneer (cottage cheese), grated</li><li>1/2 cup Carrot &amp; Peas, partially boiled &amp; squeezed to remove excess</li><li>5 mediums Potatoes, boiled-peeled-grated</li><li>Salt to taste</li><li>1 cup Tomato puree</li><li>1/4 teaspoon Turmeric powder</li><li>1 teaspoon Shah Jeera (cumin seeds)</li></ul>
+        </div>
+        
+        <button class="toggle-instructions-btn" fdprocessedid="nncsq">Show Instructions</button>
+        <div class="instructions hidden">
+          <p><b>Instructions:</b></p>
+          <ul><li><ol><li>Boil the potatoes, cool, peel and grate them.</li><li>Grate paneer.</li><li>Wash all green chillies, deseed and chop them fine.</li><li>Peel carrots,grate them, add peas and some water, boil them in microwave for 10 mins. Once done, remove excess by passing &amp; squeezing it through a muslin cloth.</li><li>Peel onions, cut them into halves and boil with a cup of water for ten minutes. Drain excess water, cool onions and grind them into a smooth paste. Set Aside.</li><li>In a bowl, mix mashed potatoes, paneer, some chopped green chillies, boiled carrot-peas, corn flour and salt. Mix well. Divide into 20-22 equal sized balls. Stuff  raisins &amp; cashew into them. Deep fry in hot oil until slightly golden brown. Drain and keep aside. Fry one kofta and check for binding, if it breaks, add a little more cornflour. Deep fry in hot oil.</li><li>OR BAKE in a 375F pre-heat oven, by arranging &amp; spraying oil on these koftas placing them on a cookie sheet wraped with aluminum foil,for 10 mins. Keep a close watch, with the help of tongs, turn them once they are slight brown on one side.</li><li>On the other side heat oil in a kadai, add shahjeera, boiled onion paste and cook for five minutes. Add ginger &amp; garlic, few chopped green chillies, coriander powder, cumin powder, turmeric powder, and salt. cook for a minute.</li><li>Add tomato puree and red chilli powder and cook on medium flame untill oil separates from gravy.</li><li>Add half&amp;half along with some water &amp; bring it to a boil and simmer for ten minutes on a slow flame. Stir occasionally.</li><li>Stir in fresh cream and garam masala powder.</li><li>Gently put all of these kofta's in the gravy when ready to serve. Simmer for another 2 mins and enjoy this rich, creamy gravy with Nan/Roti (Indian Flat Bread.)</li></ol></li></ul>
+        </div>
+      </div>
+
+
+      <div class="recipe-card">
+        <img src="https://img.spoonacular.com/recipes/716311-556x370.jpg" alt="Mango Fried Rice">
+        <h3>Mango Fried Rice</h3>
+        <p><b>Ready in:</b> 45 minutes</p>
+        
+        <button class="toggle-ingredients-btn" fdprocessedid="ydew">Show Ingredients</button>
+        <div class="ingredients hidden">
+          <p><b>Ingredients:</b></p>
+          <ul><li>2 cups of chicken stock</li><li>Seasoning cubes</li><li>3 slices of mango cubed</li><li>1 cup of rice</li><li>1 cup of chopped vegetables</li><li>1 scotch bonnet pepper</li></ul>
+        </div>
+        
+        <button class="toggle-instructions-btn" fdprocessedid="7ym9in">Show Instructions</button>
+        <div class="instructions hidden">
+          <p><b>Instructions:</b></p>
+          <ul><li>Wash your rice and bring to boil on medium heat with very little water as you are still going to cook it in chicken stock.Once the rice is slightly soft and the initial water has dried up, reduce the heat and pour in the chicken stock and cook till the chicken stock is all absorbed and has dried up. The chicken stock if freshly made will have some oil from the chicken so your rice does not need oil.Increase the heat and stir in the chopped vegetables and pepper. Add your seasoning cube.Finally stir in your cubed mango and serve warm with any protein of your choice. I’d say chicken but it’s up to you.</li></ul>
+        </div>
+      </div>
+
+
+      <div class="recipe-card">
+        <img src="https://img.spoonacular.com/recipes/648798-556x370.jpg" alt="Kc's Oreo Cheesecake">
+        <h3>Kc's Oreo Cheesecake</h3>
+        <p><b>Ready in:</b> 45 minutes</p>
+        
+        <button class="toggle-ingredients-btn" fdprocessedid="h9alq">Show Ingredients</button>
+        <div class="ingredients hidden">
+          <p><b>Ingredients:</b></p>
+          <ul><li>1 package (1 lb. 2 oz.) OREO Cookies, divided</li><li>1/4 cup (½ stick) butter, melted</li><li>1/2 teaspoon Knox Gelatin</li><li>3 tablespoons milk</li><li>2 packages (8 oz. each) PHILADELPHIA Cream Cheese, softened</li><li>3/4 cup Sugar</li><li>1 teaspoon Vanilla</li><li>2 cups whipping cream</li></ul>
+        </div>
+        
+        <button class="toggle-instructions-btn" fdprocessedid="ft1378">Hide Instructions</button>
+        <div class="instructions hidden">
+          <p><b>Instructions:</b></p>
+          <ul><li>Coarsely chop 15 cookies.</li><li>Finely crush remaining cookies and mix with butter.</li><li>Press onto bottom of 13x9-inch pan.</li><li>Refrigerate while preparing filling.</li><li>Beat whipping cream in a bowl with hand/stand mixer until soft peaks.</li><li>In a small saucer, heat milk and gelatin in microwave oven for 15 seconds or until melted.</li><li>Beat cream cheese, sugar, vanilla and gelatin mixture in a large bowl until well blended.</li><li>Gently fold in whipping cream and chopped cookies.</li><li>Spoon over crust.</li><li>Refrigerate for 2 hours or until firm.</li></ul>
+        </div>
+      </div>
+
+
+      <div class="recipe-card">
+        <img src="https://img.spoonacular.com/recipes/647830-556x370.jpg" alt="Indian Lentil Dahl">
+        <h3>Indian Lentil Dahl</h3>
+        <p><b>Ready in:</b> 45 minutes</p>
+        
+        <button class="toggle-ingredients-btn" fdprocessedid="37vg3">Show Ingredients</button>
+        <div class="ingredients hidden">
+          <p><b>Ingredients:</b></p>
+          <ul><li>2 T. canola oil</li><li>1/3 c. coarsely chopped cilantro</li><li>1 c. coconut milk</li><li>1 T. minced fresh ginger</li><li>1 t. Garam Masala (can be easily found in the supermarket spice isle)</li><li>4 garlic cloves, minced</li><li>1 T. lime juice</li><li>1 onion, finely chopped</li><li>3 . plum tomatoes</li><li>1 1/4 c. split red lentils</li><li>3/4 t. salt</li><li>3 c. water</li></ul>
+        </div>
+        
+        <button class="toggle-instructions-btn" fdprocessedid="bzlek8">Show Instructions</button>
+        <div class="instructions hidden">
+          <p><b>Instructions:</b></p>
+          <ul><li><ol><li> In a large saucepan, combine oil, onion and salt at medium-high heat. Cook until onion starts to brown, around 5 minutes or so. Add garlic, ginger and Garam Masala , cook until fragrant, about 1 minute.</li><li>Add lentils, coconut milk and water. Bring to a boil, then reduce heat to low and simmer, partially covered until lentils are fully tender and broken down to an almost paste-like consistency, about 25-30 minutes.</li><li>Add lime juice and cilantro. Check for seasoning. Serve (over rice if you like), topped with the diced tomatoes.</li></ol></li></ul>
+        </div>
+      </div>
+
+      
+      <div class="recipe-card">
+        <img src="https://img.spoonacular.com/recipes/633314-556x370.jpg" alt="Bacon Ice Cream">
+        <h3>Bacon Ice Cream</h3>
+        <p><b>Ready in:</b> 45 minutes</p>
+        
+        <button class="toggle-ingredients-btn" fdprocessedid="22004">Show Ingredients</button>
+        <div class="ingredients hidden">
+          <p><b>Ingredients:</b></p>
+          <ul><li>1 pound bacon</li><li>1 pint of Dulce de Leche Ice Cream, warmed just enough so you c</li><li>1/4 cup of chopped pecans</li></ul>
+        </div>
+        
+        <button class="toggle-instructions-btn" fdprocessedid="fviup">Show Instructions</button>
+        <div class="instructions hidden">
+          <p><b>Instructions:</b></p>
+          <ul><li><ol><li>Mix bacon and nuts in bowl. Set aside a teaspoon of bacon and nuts for topping.</li><li>Mix chopped bacon and nuts into ice cream, then place back in freezer.</li><li>After Bacon Ice Cream is frozen, scoop into cup and top with bits of bacon and nuts. Enjoy!</li></ol></li></ul>
+        </div>
+      </div>
+
+
+      <div class="recipe-card">
+        <img src="https://img.spoonacular.com/recipes/631759-556x370.jpg" alt="Simit (Turkish Circular Bread)">
+        <h3>Simit (Turkish Circular Bread)</h3>
+        <p><b>Ready in:</b> 45 minutes</p>
+        
+        <button class="toggle-ingredients-btn" fdprocessedid="mfl83d">Show Ingredients</button>
+        <div class="ingredients hidden">
+          <p><b>Ingredients:</b></p>
+          <ul><li>400 g flour,</li><li>1 1/3 tsp instant dry yeast,</li><li>40 g molasses</li><li>olive oil</li><li>1 tsp salt,</li><li>150 g hulled sesame seeds</li><li>1 tablespoon water</li></ul>
+        </div>
+        
+        <button class="toggle-instructions-btn" fdprocessedid="vjzien">Show Instructions</button>
+        <div class="instructions hidden">
+          <p><b>Instructions:</b></p>
+          <ul><li><ol><li>1. In a medium bowl combine the dry ingredients.</li><li>2. Make a well in the center and pour the olive oil and lukewarm water into the well.</li><li>3. Knead the dough with your hands for 5-10 minutes.</li><li>4. Divide the dough into 16 equal pieces.</li><li>5. Take two pieces and stretch the dough into thin strips (about 30-35 cm long).</li><li>6. Cover the rest of the dough to prevent it from drying out.</li><li>7. Place 2 strips side-by-side, pinch the ends. Twist them together and pinch to join the ends.</li><li>8. Place the rings on baking sheets lined with parchment paper.</li><li>9. Let the dough sit in a warm place for 20-30 minutes.</li><li>10. Preheat the oven to 200C.</li><li>11. Pour the sesame seeds into the pan and turn the fire on medium heat.</li><li>12. Stir the seeds every 4-5 minutes until golden. Set aside.</li><li>13. Pour molasses and boiling water into a bowl big enough to fit your rings.</li><li>14. Whisk to dissolve the molasses completely.</li><li>15. Put the sesame seeds in another bowl.</li><li>16. Dip both sides of the rings in the liquid, drain excess moisture, then coat both sides in the sesame seeds.</li><li>17. Transfer them to the baking sheets.</li><li>18. Bake in preheated oven for about 17 minutes.</li></ol></li></ul>
+        </div>
+      </div>
+
+
+      <div class="recipe-card">
+        <img src="https://img.spoonacular.com/recipes/663931-556x370.jpg" alt="Tuna Mexi Melts">
+        <h3>Tuna Mexi Melts</h3>
+        <p><b>Ready in:</b> 45 minutes</p>
+        
+        <button class="toggle-ingredients-btn" fdprocessedid="tn1ymv">Show Ingredients</button>
+        <div class="ingredients hidden">
+          <p><b>Ingredients:</b></p>
+          <ul><li>5 tablespoons of Butter, Melted</li><li>1/4 teaspoon of Chile Powder</li><li>1 bunch Small of Cilantro</li><li>1/4 teaspoon of Cumin</li><li>1 loaf of French Bread</li><li>Garlic Powder for Sprinkling</li><li>2 Green Onions, Chopped</li><li>1/2 Jalapeno; Seeded, Cored and Chopped</li><li>1 clove of Garlic 1 Lime, Juiced</li><li>1/4 teaspoon of Paprika</li><li>8 ounces of Pepper Jack Cheese, Sliced</li><li>3/4 cup of your Picante</li><li>5 Roma Tomatoes, Roughly Chopped</li><li>1 teaspoon Salt</li><li>3/4 cup of Shredded Cheddar Cheese</li><li>1 cup Sour cream or yogurt</li><li>360 grams Tuna</li></ul>
+        </div>
+        
+        <button class="toggle-instructions-btn" fdprocessedid="inoaav">Show Instructions</button>
+        <div class="instructions hidden">
+          <p><b>Instructions:</b></p>
+          <ul><li><ol><li>Instructions</li><li>Well whip up the picante first. To do this, go ahead and add all the ingredients into your food processor. Zip it up good and then add in some salt to taste.</li><li>Next up, grab your french loaf and slice it into 1 slices. Brush the melted butter over your slices of bread and then sprinkle on some cumin, chile powder, and garlic powder.</li><li>Add all the melt ingredients with the exception of the pepper jack cheese to a bowl and mix it up good. Now grab your bread and lop a large spoonful of the tuna mixture on each piece. Top them all off with a slice of pepper jack cheese. Throw your sandwiches into an oven heated to 350 degrees and let them heat up for about 10 to 15 minutes or until your cheese is melted and bubbling.</li></ol></li></ul>
+        </div>
+      </div>
+
+
+      <div class="recipe-card">
+        <img src="https://img.spoonacular.com/recipes/663050-556x370.jpg" alt="Tex-Mex Burger">
+        <h3>Tex-Mex Burger</h3>
+        <p><b>Ready in:</b> 15 minutes</p>
+        
+        <button class="toggle-ingredients-btn" fdprocessedid="f13vp9">Show Ingredients</button>
+        <div class="ingredients hidden">
+          <p><b>Ingredients:</b></p>
+          <ul><li>1 avocado, thinly sliced</li><li>1 tsp Chili Powder</li><li>¾ cup cilantro, chopped</li><li>2 tsp Cumin</li><li>2 lb ground beef</li><li>4 Hamburger Buns, Toasted</li><li>1 tsp Paprika</li><li>1 tsp Pepper</li><li>4 Slices Pepper jack Cheese</li><li>8 thin slices red onion</li><li>8 tablespoons salsa</li><li>1 tsp Salt</li></ul>
+        </div>
+        
+        <button class="toggle-instructions-btn" fdprocessedid="nvkobi">Show Instructions</button>
+        <div class="instructions hidden">
+          <p><b>Instructions:</b></p>
+          <ul><li><ol><li>Preheat broiler. </li><li>Heat large frying pan to medium high heat. </li><li>Make patties: Take the ground beef, add salsa and spices. Mix together till evenly distributed. Place patties on frying pan and cook for 3 minutes and 30 seconds.</li><li>Flip over and place 1 slice of cheese on each patty. Cook for another 3 minutes and 30 seconds. Meanwhile, get out all toppings and toast buns. </li><li>Once done, let burger rest for 5 minutes on a plate.</li><li>Assemble burger: Place patty on bun. Top with 1 TBSP Salsa, then 2 slices of red onion. Place  of the cilantro on red onion and then place avocado on top bun. Add bun to burger and serve.</li></ol></li></ul>
+        </div>
+      </div>
+
+
+      <div class="recipe-card">
+        <img src="https://img.spoonacular.com/recipes/658743-556x370.jpg" alt="Roll Up Eggplant Lasagna">
+        <h3>Roll Up Eggplant Lasagna</h3>
+        <p><b>Ready in:</b> 45 minutes</p>
+        
+        <button class="toggle-ingredients-btn" fdprocessedid="kj03d">Show Ingredients</button>
+        <div class="ingredients hidden">
+          <p><b>Ingredients:</b></p>
+          <ul><li>black pepper</li><li>1 small eggplant</li><li>1/4 teaspoon garlic salt</li><li>2 cups shredded italian cheese</li><li>1 1/2 teaspoons Italian seasoning</li><li>8 lasagna noodles</li><li>1 24 oz jar spicy marinara sauce</li><li>2 tablespoons olive oil</li><li>1 large onion (sliced thin and long)</li><li>1 teaspoon red pepper flakes</li><li>regular salt</li></ul>
+        </div>
+        
+        <button class="toggle-instructions-btn" fdprocessedid="hs5t48">Show Instructions</button>
+        <div class="instructions hidden">
+          <p><b>Instructions:</b></p>
+          <ul><li><ol><li>Peel eggplant. Place the eggplant upright on the cutting board and slice the eggplant in long thin vertical slices. Sprinkle some salt and black pepper on eggplant.</li><li>Heat one tbsp of olive oil in a pan and fry the eggplant slices lightly from both sides. Keep aside.</li><li>Now heat rest of 1 tbsp of olive oil and put onions in it. Stir-fry until translucent. Add some garlic salt, red crushed pepper, and Italian seasoning, and mix well. Take onions off heat.</li><li>Heat the marinara sauce in a pan and adjust the spices per your taste. Now layer the baking dish with 1 cup of sauce in the bottom.</li><li>Now taking one strip of pasta at a time, start layering it with 2 slices of eggplant, then onions and top it off with some cheese. Start rolling pasta starting from one end and go till end. Put it seam side down in the baking dish. Repeat this process until all the pasta sheets are finished.</li><li>Cover the pasta completely with the rest of the sauce. Sprinkle rest 1 cup of the cheese on top of it.</li><li>Bake at 400 degree F in a pre-heated oven for about 25 minutes.</li><li>Let cool down for 5-7 min and serve warm with ur favorite pasta or soup.</li></ol></li></ul>
+        </div>
+      </div>
+
+ 
+      <div class="recipe-card">
+        <img src="https://img.spoonacular.com/recipes/642583-556x370.jpg" alt="Farfalle with Peas, Ham and Cream">
+        <h3>Farfalle with Peas, Ham and Cream</h3>
+        <p><b>Ready in:</b> 30 minutes</p>
+        
+        <button class="toggle-ingredients-btn" fdprocessedid="trg48b">Show Ingredients</button>
+        <div class="ingredients hidden">
+          <p><b>Ingredients:</b></p>
+          <ul><li>1 teaspoon butter</li><li>3-4 slices of ham, diced</li><li>Farfalle Pasta, or any shape pasta desired</li><li>½ cup heavy cream ( milk can be a substitute)</li><li>½ cup parmesan cheese</li><li>1 cup frozen peas</li><li>Salt and pepper</li></ul>
+        </div>
+        
+        <button class="toggle-instructions-btn" fdprocessedid="k14r9">Show Instructions</button>
+        <div class="instructions hidden">
+          <p><b>Instructions:</b></p>
+          <ul><li><ol><li>Cook pasta according to package directions.</li><li>In a skillet add the peas, butter, ham. Sautee for 5 minutes. Add the cream, salt and pepper and cook under medium heat for 5 to 10 minutes, or until the cream is slightly becoming thick. Remove from heat. When the pasta is cooked and drained, return to pan and add the sauce. Stir well and add the cheese.</li><li>Serve nice and hot.</li></ol></li></ul>
+        </div>
+      </div>
+
+
+      <!-- Recipe cards will be inserted here via JavaScript -->
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+  <h2>About Recipe Finder</h2>
+  <div class="about-content">
+    <p>
+      FlavorFetch is your ultimate culinary companion! Whether you're a seasoned chef, a beginner in the kitchen, or simply looking for inspiration for your next meal, we have you covered. With a vast collection of recipes, detailed instructions, and nutritional information, your journey to discovering new tastes has never been easier.
+    </p>
+    <ul>
+      <li><b>Thousands of Recipes:</b> Explore cuisines from around the globe, including vegan, vegetarian, gluten-free, and keto options.</li>
+      <li><b>Easy-to-Follow Instructions:</b> Step-by-step guidance for both beginners and experts.</li>
+      <li><b>Personalized Recommendations:</b> Get recipe suggestions based on your preferences and dietary needs.</li>
+      <li><b>Save & Share:</b> Save your favorite recipes and share them with friends and family.</li>
+    </ul>
+    <div class="quote-section">
+      <blockquote>
+        "Cooking is an art, and Recipe Finder is your canvas!"
+      </blockquote>
+    </div>
+    <p style="color: white;">
+      Start your culinary journey today and let your taste buds explore the world of flavors!
+    </p>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2 style="color: white; backdrop-filter: blur(30px);">Contact Us</h2>
+    <p style="color: white; backdrop-filter: blur(30px);">We would love to hear from you! Whether you have a recipe suggestion, feedback, or just want to say hello, don't hesitate to reach out.</p>
+    <div class="contact-info">
+      <div class="info-item">
+        <h3>Email Us</h3>
+        <p>support@flavorfetch.com</p>
+      </div>
+      <div class="info-item">
+        <h3>Call Us</h3>
+        <p>+91 7379377307</p>
+      </div>
+      <div class="info-item">
+        <h3>Follow Us</h3>
+        <p>
+          <a href="https://www.instagram.com/__shivam73/" target="_blank">Instagram</a> |
+          <a href="https://github.com/kasaudhanshivam" target="_blank">Github</a> |
+          <a href="https://www.linkedin.com/in/kasaudhanshivam/" target="_blank">Linkedin</a>
+        </p>
+      </div>
+    </div>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
+  
+  
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 FlavorFetch. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

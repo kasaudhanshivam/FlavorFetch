@@ -48,5 +48,5 @@ If you’d like to add new features or fix bugs:
 
 ## 💙 Developed By
 
-** Shivam Kasaudhan**  
+**Shivam Kasaudhan**  
 If you like this project, don’t forget to **⭐ star the repo** on GitHub!
